@@ -20,7 +20,7 @@
 	<div class="content">
 		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
 		<div >
-			<form id="pendaftaran">
+			<form name="datapribadi" method="" action="">
 		<table>
     			<tr>
         			<td>NIM</td><td>:</td><td><input type="text" id="nim" /></td>
@@ -56,13 +56,33 @@
 	
 	<br/>
 <br/>
- 
+
+	<div class="row">
+        <table class="table" id="databel">
+          <thead>
+            <tr>
+              <th scope="col">Nama</th>
+         
+            </tr>
+          </thead>
+        </table>  
+      </div>
+    </form>
 Terima Kasih Telah: <span id="hasil"></span>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
 </body>
 <script>
 function tampilkan(){
-	var nim_student=document.getElementById("nim").select1.value;
-  	document.getElementById("hasil").innerHTML=nim_student;
+	  var n=document.forms['datapribadi']['nim'].value;
+	var tabel = document.getElementById("databel");
+       var baris = tabel.insertRow(1);
+       var kol1 = baris.insertCell(0);
+	 kol1.innerHTML = n;
     
 }
 </script>		
