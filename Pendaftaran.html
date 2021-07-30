@@ -23,10 +23,10 @@
 			<form id="pendaftaran">
 		<table>
     			<tr>
-        			<td>NIM</td><td>:</td><td><input type="text" name="nim" /></td>
+        			<td>NIM</td><td>:</td><td><input type="text" id="nim" /></td>
         		</tr>
         		<tr>
-        			<td>Nama</td><td>:</td><td><input type="text" name="email" /></td>
+        			<td>Nama</td><td>:</td><td><input type="text" id="email" /></td>
         		</tr>
         		<tr>
         			<td>Proyek</td><td>:</td>
@@ -53,5 +53,22 @@
 			
 		</div>
 	</div>
+	
+	<br/>
+<br/>
+ 
+<h2>Terima Kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!: 
+	<span id="hasil"></span></h2>
+	
+	
 </body>
+<script>
+document.getElementById("tombol_s").
+addEventListener("click", tampilkan_data);
+ 
+function tampilkan_data(){
+    var nilai_form=document.getElementById("nim").value;
+    document.getElementById("hasil").innerHTML=nilai_form;
+}
+</script>		
 </html>
