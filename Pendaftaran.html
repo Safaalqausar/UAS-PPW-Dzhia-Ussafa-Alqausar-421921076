@@ -45,7 +45,7 @@
         		</tr>
         		<tr>
         			<td></td><td></td>
-				<td><button id="tombol_s">Submit</button>
+				<input type="submit" value="Submit" onclick="tampilkan()">
 				</td>
         		</tr>
     		</table>
@@ -57,16 +57,13 @@
 	<br/>
 <br/>
  
-Terima Kasih telah melakukan pendaftaran sidang
-	<span id="hasil"></span></h2>
+Terima Kasih: <span id="hasil"></span>
 </body>
 <script>
-document.getElementById("tombol_s").
-addEventListener("click", tampilkan_nilai_data);
- 
-function tampilkan_nilai_data(){
-    var nilai_data=document.getElementById("nim").value;
-    document.getElementById("hasil").innerHTML=nilai_data;
+function tampilkan(){
+	var nim_student=document.getElementById("nim").select1.value;
+  	document.getElementById("hasil").innerHTML=nim_student;
+    
 }
 </script>		
 </html>
