@@ -21,17 +21,32 @@
 		<h3>FORM PENDAFTARAN SIDANG PROYEK</h3>
 		<div >
 			<form id="pendaftaran">
-				<label>NIM</label></label>
-					<input id="nim" type="text" >
-				<label>Nama</label></lab><input type="text" id="nama">
-				<label>Proyek</label>
-					<select id="proj">
+		<table>
+    			<tr>
+        			<td>NIM</td><td>:</td><td><input type="text" name="nim" /></td>
+        		</tr>
+        		<tr>
+        			<td>Nama</td><td>:</td><td><input type="text" name="email" /></td>
+        		</tr>
+        		<tr>
+        			<td>Proyek</td><td>:</td>
+				<td>
+				<select id="proj">
 						<option value="proj1">Proyek 1</option>
 						<option value="proj2">Proyek 2</option>
 						<option value="proj3">Proyek 3</option>
 						<option value="proj4">Proyek 4</option>
-					</select>
-				<label>Judul Proyek</label></lab><textarea id="judul proj" rows="5" cols="20"></textarea>
+				</select>
+				</td>
+       			</tr>
+        		<tr>
+        			<td>Judul Proyek</td><td>:</td>
+				<td><textarea id="judul proj" rows="5" cols="20"></textarea></td>
+        		</tr>
+        		<tr>
+        			<td></td><td></td><td><input type="submit" name="Submit" value="Submit" /></td>
+        		</tr>
+    		</table>
 			</form>
 			<button form="pendaftaran" class="sendform" type="button">Submit</button>
 			<button form="pendaftaran" class="sendform" type="reset">Reset</button>
