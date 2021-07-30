@@ -62,13 +62,13 @@ Data yang anda masukan adalah sebagai berikut:
           <thead>
             <tr>
               <th scope="col">Nim</th>
-	      <th scope="col">Nama</th>
+		<th scope="col">Nama</th>
          
             </tr>
           </thead>
         </table>  
-      </div>	
-    </form>
+      </div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -81,19 +81,16 @@ Data yang anda masukan adalah sebagai berikut:
 	
 function tampilkan(){
 	
-	 var datanim=document.forms['datapribadi']['nim'].value;
+	var datanim=document.forms['datapribadi']['nim'].value;
 	var datanama=document.forms['datapribadi']['namastudent'].value;
 	
-    	var tabel = document.getElementById("databel");
+	var tabel = document.getElementById("databel");
        
 	var baris = tabel.insertRow(1);
         var kol1 = baris.insertCell(0);
 	var kol2 = baris.insertCell(1);
-	
 	kol1.innerHTML = datanim;
-	kol2.innerHTML = datanama;
-
-    
+	kol2.innerHTML = datanama;    
 }
 </script>		
 </html>
