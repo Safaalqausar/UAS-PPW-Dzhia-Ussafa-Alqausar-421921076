@@ -57,7 +57,7 @@
 Terima kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!<br/>
 Data yang anda masukan adalah sebagai berikut:
 <br/>
-	<p id="teks"></p>
+	<p id="teks"></p><p id="teks1"></p>
 <div class="row">
         <table class="table" id="databel">
           <thead>
@@ -82,8 +82,11 @@ Data yang anda masukan adalah sebagai berikut:
 document.getElementById('teks').innerHTML = 'Hallo JavaScript';
 	
 function tampilkan(){
+	
 	 var datanim=document.forms['datapribadi']['nim'].value;
 	var datanama=document.forms['datapribadi']['namastudent'].value;
+	
+	document.getElementById('teks1').innerHTML = datanim;
 	
     	var tabel = document.getElementById("databel");
        
