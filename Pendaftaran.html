@@ -26,7 +26,7 @@
         			<td>NIM</td><td>:</td><td><input type="text" id="nim" /></td>
         		</tr>
         		<tr>
-        			<td>Nama</td><td>:</td><td><input type="text" id="email" /></td>
+        			<td>Nama</td><td>:</td><td><input type="text" id="namastudent" /></td>
         		</tr>
         		<tr>
         			<td>Proyek</td><td>:</td>
@@ -56,19 +56,23 @@
 	
 	<br/>
 <br/>
-
+Terima kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!<br/>
+Data yang anda masukan adalah sebagai berikut:<br/>
+<br/>
+<br/>
 	<div class="row">
         <table class="table" id="databel">
           <thead>
             <tr>
-              <th scope="col">Nama</th>
+              <th scope="col">Nim</th>
+		<th scope="col">Nama</th>
          
             </tr>
           </thead>
         </table>  
       </div>
     </form>
-Terima Kasih Telah: <span id="hasil"></span>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -78,11 +82,16 @@ Terima Kasih Telah: <span id="hasil"></span>
 </body>
 <script>
 function tampilkan(){
-	  var n=document.forms['datapribadi']['nim'].value;
+	  var datanim=document.forms['datapribadi']['nim'].value;
+	  var datanama=document.forms['datapribadi']['namastudent'].value;
+	
 	var tabel = document.getElementById("databel");
-       var baris = tabel.insertRow(1);
+       
+	var baris = tabel.insertRow(1);
        var kol1 = baris.insertCell(0);
-	 kol1.innerHTML = n;
+	var kol2 = baris.insertCell(1);
+	 kol1.innerHTML = datanim;
+	kol2.innerHTML = datanama;
     
 }
 </script>		
