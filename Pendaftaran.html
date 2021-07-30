@@ -57,7 +57,8 @@
 Terima kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!<br/>
 Data yang anda masukan adalah sebagai berikut:
 <br/>
-	<p id="demo">NIM: </p>
+	<p id="hasilnim">NIM: </p><br/>
+	<p id="hasilnama">Nama: </p>
 <br/>
 	
     </form>
@@ -74,7 +75,8 @@ function tampilkan(){
 	 var datanim=document.forms['datapribadi']['nim'].value;
 	var datanama=document.forms['datapribadi']['namastudent'].value;
 	
-    document.getElementById("demo").innerHTML = "<b>" + datanim +"</b>";
+    document.getElementById("hasilnim").innerHTML = "<b>" + datanim +"</b>";
+    document.getElementById("hasilnama").innerHTML = "<b>" + datanama +"</b>";
     
 }
 </script>		
