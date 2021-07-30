@@ -57,18 +57,9 @@
 Terima kasih telah melakukan pendaftaran sidang, silahkan tunggu info berikutnya untuk jadwal sidang!<br/>
 Data yang anda masukan adalah sebagai berikut:
 <br/>
+	<p id="demo"></p>
 <br/>
-	<div class="row">
-        <table class="table" id="databel">
-          <thead>
-            <tr>
-              <th scope="col">Nim</th>
-		<th scope="col">Nama</th>
-         
-            </tr>
-          </thead>
-        </table>  
-      </div>
+	
     </form>
 
 <!-- Optional JavaScript -->
@@ -80,16 +71,8 @@ Data yang anda masukan adalah sebagai berikut:
 </body>
 <script>
 function tampilkan(){
-	  var datanim=document.forms['datapribadi']['nim'].value;
-	  var datanama=document.forms['datapribadi']['namastudent'].value;
-	
-	var tabel = document.getElementById("databel");
-       
-	var baris = tabel.insertRow(1);
-       var kol1 = baris.insertCell(0);
-	var kol2 = baris.insertCell(1);
-	 kol1.innerHTML = datanim;
-	kol2.innerHTML = datanama;
+	 var nama = document.getElementById("nim").value ;
+    document.getElementById("demo").innerHTML = "<b>" + nama +"</b>";
     
 }
 </script>		
